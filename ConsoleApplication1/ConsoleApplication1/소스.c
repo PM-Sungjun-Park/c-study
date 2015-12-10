@@ -1,7 +1,10 @@
 #include <stdio.h>
 int main(void)
 {
-	printf("Hell Chosen \n");
+	int num;
+	num = 20;
+
+	printf("%d Hell Chosen \n",num);
 	return 0;
 	
 }
