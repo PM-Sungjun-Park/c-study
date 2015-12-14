@@ -199,9 +199,9 @@ int main_3_1_4(void)
 
 */
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int main(void)
+int main_3_1_5(void)
 {
 	int a, b, c;
 	int result;
@@ -216,3 +216,123 @@ int main(void)
 
 	return 0;
 }
+
+/*
+
+Day 3
+#Chapter 4 
+
+*/
+
+// test , operator "> , <" 
+
+//#include <stdio.h>
+int main_test_3A(void)
+{
+	int val_1, val_2;
+	int comparison;
+
+
+	printf("what is bigger number? , press insert two numbers \n");
+	scanf("%d %d", &val_1, &val_2);
+
+	comparison = val_1 > val_2; //comparison val_1 , val_2
+
+	if (comparison != 0)
+	{
+		printf("%d is bigger than %d.\n", val_1, val_2);
+	}
+
+	else
+	{
+		printf("%d is smaller than %d.\n", val_1, val_2);
+	}
+
+
+	printf("\n \n comparison = %d \n", comparison);
+
+	return 0;
+}
+
+
+// float_error
+//#include <stdio.h>
+int main_4_float_error(void)
+{
+	int i;
+	float val=0.0;
+	for (i = 0; i < 100; i++)
+		val = val + 0.1;
+
+	printf("%f \n", val);
+	
+
+	return 0;
+}
+
+// 실수 단위의 오류 발생에 대한 코드
+// 실수는 "부정확하게 다뤄진다"
+
+
+
+/*
+
+Exercise_4_4_1
+positive number to  negative number
+
+*/
+
+//#include <stdio.h>
+
+int main_4_4_1(void)
+{
+
+	int val_p;
+	int val_n;
+	/*
+	how to alter positive number to negative number (bit)?
+	: 000011 = 3 , 111101 = -3 
+	000011 + 111101 = (1)000000 = 0
+	*/
+
+	printf(" insert number \n\n");
+	scanf("%d", &val_p);
+
+	val_n = ~val_p + 1; // val_p reverse bit and plus 1
+	
+	printf("\n\n%d", val_n);
+
+	return 0;
+	
+
+
+}
+
+//end 4_4_1
+
+
+/*
+
+Excercise_4_4_2
+Double N
+
+*/
+
+//#include <stdio.h>
+int main_4_4_2(void)
+{
+	int val;
+	int result;
+
+	printf("please enter number \n");
+	scanf("%d", &val);
+
+	result = val << 1;
+	
+	printf("%d", result);
+
+	return 0;
+
+}
+
+//End 4_4_2
