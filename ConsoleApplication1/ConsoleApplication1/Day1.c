@@ -1,4 +1,52 @@
 
+
+
+
+/*
+Day 1
+*/
+
+//  변수값의 증감
+
+#include <stdio.h>
+
+int main_D0(void)
+{
+	int val_1; // val 1, 2 는 정수값
+	int val_2;
+	val_1 = 20;
+	val_2 = 20; // 값 지정
+
+				//선연산과 후연산의 차이
+
+	printf(" 기존 값은 모두 20이며 val1은 후연산, val2는 선 연산이다. \n\n");
+
+	printf(" val_1 = %d \n", val_1++);
+	printf(" val_2 = %d \n\n", ++val_2);
+
+	// 연산이후
+	printf(" 연산이후의 값입니다 \n\n");
+
+	printf(" val_1 = %d \n", val_1);
+	printf(" val_2 = %d \n\n\n", val_2);
+
+	return 0;
+
+}
+
+
+/*  출력
+
+val_1 = 20
+val_2 = 21
+
+val_1 = 21
+val_2 = 21
+
+*/
+
+
+
 /*
 Day 2
 */
@@ -94,5 +142,77 @@ int main_3_1_2(void)
 
 // 문제 3-1-2 End
 
-#
 
+/*
+
+문제 3-1-3
+제곱 연산
+
+*/
+
+//#include<stdio.h>
+int main_3_1_3(void)
+{
+	int val_1;
+	int result;
+	printf("N^2 를 출력합니다. N=? \n");
+	scanf("%d", &val_1);
+	
+	result = val_1*val_1;
+	
+	printf("\n %d ^2 = %d  \n", val_1, result);
+	return 0;
+
+}
+
+/*
+
+문제 3-1-4
+A/B의 나머지값 출력
+
+*/
+
+//#include <stdio.h>
+
+int main_3_1_4(void)
+{
+	int val_1, val_2;
+	int result;
+
+	printf("A/B 의 나머지 출력입니다. \n A를 입력해주세요.\n");
+	scanf("%d", &val_1);
+	printf("B를 입력해주세요\n");
+	scanf("%d", &val_2);
+	
+	result = val_1%val_2;
+
+	printf("\n \n %d/%d 의 나머지는 %d", val_1, val_2, result);
+	return 0;
+
+}
+
+
+/*
+
+문제 3-1-5
+(a-b)*(b+c)*(c%a)=?
+
+*/
+
+#include <stdio.h>
+
+int main(void)
+{
+	int a, b, c;
+	int result;
+	
+	printf("세가지 값을 입력해주세요 \n");
+	scanf("%d %d %d", &a, &b, &c);
+
+	
+	result = (a - b)*(b + c)*(c%a);
+	
+	printf("%d", result);
+
+	return 0;
+}
