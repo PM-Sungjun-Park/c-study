@@ -93,7 +93,7 @@ int main_swap(void)
 }
 
 #include <stdio.h>
-int main(void)
+int main_cal(void)
 {
 	int a, b;
 	scanf("%d %d", &a, &b);

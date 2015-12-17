@@ -336,3 +336,59 @@ int main_4_4_2(void)
 }
 
 //End 4_4_2
+
+
+/*
+Excercise_5
+*/
+
+// 5-1-1
+
+//#include <stdio.h>
+int main_5_1_1(void)
+{
+	int x1, y1,x2,y2;
+	int area;
+	printf("input [x1 y1 x2 y2]\n");
+	scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
+	
+	area = (x2 - x1)*(y2 - y1);
+	printf("%d \n", area);
+
+	return 0;
+	
+}
+
+
+//#include <stdio.h>
+int main_5_1_2(void)
+{
+	double val, val2;
+	scanf("%lf %lf", &val, &val2);
+
+	printf("%lf과 %lf의 연산 합=%lf 차=%lf 곱=%lf 나누기=%lf \n", val, val2,  val + val2, val - val2, val*val2, val / val2);
+	return 0;
+}
+
+
+//#include <stdio.h>
+int main_5_1_3(void)
+{
+	char i;
+	for (i = 1; i <= 126; i++)
+		printf("%d = %c \n ", i,i);
+	return 0;
+}
+
+#include <stdio.h>
+int main(void)
+{
+	char i,j;
+
+	scanf("%d %c", &i, &j);
+
+	printf("%c %d\n", i, j);
+
+	return 0;
+
+}
